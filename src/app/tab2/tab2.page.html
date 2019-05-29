@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Existing Rentals
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor ="let rental of rentals">
+        <div>{{rental.location}}</div>
+        <div>{{rental.price}}</div>
+        <div>{{rental.accomodation}}</div>
+    <img src="{{rental.image}}"(click)="navToRental()">
+    </ion-card>
+      
+</ion-content>
