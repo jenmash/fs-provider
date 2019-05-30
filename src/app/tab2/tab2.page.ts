@@ -19,7 +19,7 @@ public rentals: Array<rental>=[];
     this.rentals = new Array();
     this.rentals.push(Lisbon);
 
-    let Paris = new rental("Paris", "500 USD", "Hotel", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYjJAAY2i35rR0U8Jo-G_zQwvRbbT1JWiG8ako3a3YZdUXe4V");
+    let Paris = new rental("Paris", "500 USD", "Villa de Fleurs", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYjJAAY2i35rR0U8Jo-G_zQwvRbbT1JWiG8ako3a3YZdUXe4V");
     this.rentals.push(Paris);
   }
 

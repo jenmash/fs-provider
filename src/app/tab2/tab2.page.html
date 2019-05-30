@@ -6,12 +6,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card *ngFor ="let rental of rentals">
+<ion-card *ngFor ="let rental of rentals">
+    <ion-card-content>
         <div>{{rental.location}}</div>
         <div>{{rental.price}}</div>
         <div>{{rental.accomodation}}</div>
     <img src="{{rental.image}}"(click)="navToRental()">
-    </ion-card>
+    </ion-card-content>
       
-</ion-content>
+</ion-card>

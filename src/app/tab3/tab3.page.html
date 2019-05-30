@@ -6,4 +6,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+<div style="margin: 15px">
+  Select the rental you wish to update.
+</div>
+
+<ion-card *ngFor ="let rental of rentals">
+    <ion-card-content>
+        <div style="font-size: 24px">{{rental.accomodation}}</div>
+        <div>{{rental.location}}</div>
+    <img src="{{rental.image}}"(click)="navToRental()">
+    </ion-card-content>
+      
+</ion-card>
+
+</ion-content>
